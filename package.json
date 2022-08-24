@@ -1,7 +1,7 @@
 {
   "name": "bun-style",
   "license": "MIT",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "types": "src/index.ts",
   "exports": {
