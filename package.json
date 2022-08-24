@@ -8,6 +8,10 @@
     ".": "./src/index.ts",
     "./*": "./src/*/index.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctjlewis/bun-style.git"
+  },
   "files": [
     "tsconfig.json",
     "bun.lockb",
