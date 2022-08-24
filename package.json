@@ -1,8 +1,9 @@
 {
   "name": "bun-style",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "type": "module",
+  "types": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
     "./*": "./src/*/index.ts"
@@ -13,9 +14,6 @@
     "node_modules.bun",
     "src/**/*"
   ],
-  "scripts": {
-    "prepublishOnly": "bun bun src/index.ts"
-  },
   "devDependencies": {
     "bun-types": "latest"
   },

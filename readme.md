@@ -11,7 +11,11 @@ to avoid callback hell common with chalk.
 import { style } from "bun-style";
 
 console.log(
-  style(" Running tests.... ", ["bgGreen", "bold"])
+  "\n\n",
+  style(" Running tests... ", ["bold", "underline", "grey"]),
+  "\n\n",
+  style(" ✓ 10 tests passed", ["green"]),
+  "\n\n",
 );
 ```
 
