@@ -1,16 +1,17 @@
 {
   "name": "bun-style",
-  "license": "MIT",
   "version": "0.1.4",
-  "type": "module",
-  "types": "src/index.ts",
-  "exports": {
-    ".": "./src/index.ts",
-    "./*": "./src/*/index.ts"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ctjlewis/bun-style.git"
+  },
+  "devDependencies": {
+    "ansi-styles": "^6.1.0",
+    "bun-types": "latest"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*/index.ts"
   },
   "files": [
     "tsconfig.json",
@@ -19,10 +20,7 @@
     "assets/**/*",
     "src/**/*"
   ],
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "dependencies": {
-    "ansi-styles": "^6.1.0"
-  }
+  "license": "MIT",
+  "type": "module",
+  "types": "src/index.ts"
 }
