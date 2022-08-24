@@ -12,6 +12,7 @@
     "tsconfig.json",
     "bun.lockb",
     "node_modules.bun",
+    "assets/**/*",
     "src/**/*"
   ],
   "devDependencies": {
