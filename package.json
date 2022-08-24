@@ -20,7 +20,9 @@
     "src/**/*"
   ],
   "devDependencies": {
-    "ansi-styles": "^6.1.0",
     "bun-types": "latest"
+  },
+  "dependencies": {
+    "ansi-styles": "^6.1.0"
   }
 }
