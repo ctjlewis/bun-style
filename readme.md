@@ -1,13 +1,18 @@
-## Getting Started
+# Console styles for Bun
 
-### Cloning the repo
+Type-safe wrapper around `ansi-styles`, similar to `chalk`.
 
-```sh
-bun create blank ./NAME_HERE
+### Example
+
+You can provide a single style as a string, or multiple as an array of strings
+to avoid callback hell common with chalk.
+
+```ts
+import { style } from "bun-style";
+
+console.log(
+  style(" Running tests.... ", ["bgGreen", "bold"])
+);
 ```
 
-### Execute a file (eg. src/index.js)
-    
-```sh
-bun run ./src/index.js
-```
+![](/assets/example.png)

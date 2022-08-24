@@ -1,8 +1,25 @@
 {
-  "name": "bun-color",
+  "name": "bun-style",
+  "license": "MIT",
   "version": "0.0.3",
-  "module": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*/index.ts"
+  },
+  "files": [
+    "tsconfig.json",
+    "bun.lockb",
+    "node_modules.bun",
+    "src/**/*"
+  ],
+  "scripts": {
+    "prepublishOnly": "bun bun src/index.ts"
+  },
   "devDependencies": {
     "bun-types": "latest"
+  },
+  "dependencies": {
+    "ansi-styles": "^6.1.0"
   }
 }
