@@ -3,7 +3,7 @@
   "license": "MIT",
   "type": "module",
   "types": "src/index.ts",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ctjlewis/bun-style.git"
