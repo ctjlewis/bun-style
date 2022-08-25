@@ -9,12 +9,12 @@ export const style = (message: string, styles?: LogStyles | LogStyles[]) => {
   }
 
   if (!Array.isArray(styles)) {
-    const ansiStyle = ansiStyles[styles];
-    return ansiStyle.open + message + ansiStyle.close;
+    styles = [styles];
   }
-  
+
   let opening = "";
   let closing = "";
+
   for (const style of styles) {
     const ansiStyle = ansiStyles[style];
     opening += ansiStyle.open;
