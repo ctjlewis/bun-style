@@ -10,13 +10,29 @@ to avoid callback hell common with chalk.
 ```ts
 import { style } from "bun-style";
 
-console.log(
-  "\n\n",
-  style(" Running tests... ", ["bold", "underline", "grey"]),
-  "\n\n",
-  style(" ✓ 10 tests passed", ["green"]),
-  "\n\n",
-);
+console.log(style("Hello world!", ["green", "bold"]))
+```
+
+Also includes a `styleLog()` utility, which adds sensible spacing by default:
+
+```ts
+import { styleLog } from "bun-style";
+
+console.log("");
+styleLog("Styles testing! ", ["white", "bold"])
+styleLog("Running tests...", ["bold", "underline", "grey"])
+styleLog("✓ 10 tests passed", ["green"])
+
+/**
+ * Equivalent to:
+ */
+// console.log(
+//   "\n\n ",
+//   style("Running tests... ", ["bold", "underline", "grey"]),
+//   "\n\n ",
+//   style("✓ 10 tests passed", ["green"]),
+//   "\n\n",
+// );
 ```
 
 ![](/assets/example.png)

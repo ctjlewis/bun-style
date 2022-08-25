@@ -1,9 +1,6 @@
-import { style } from "../src";
+import { styleLog } from "../src";
 
-console.log(
-  "\n\n",
-  style(" Running tests... ", ["bold", "underline", "grey"]),
-  "\n\n",
-  style(" ✓ 10 tests passed", ["green"]),
-  "\n\n",
-);
+console.log("");
+styleLog("Styles testing! ", ["white", "bold"])
+styleLog("Running tests...", ["bold", "underline", "grey"])
+styleLog("✓ 10 tests passed", ["green"])
