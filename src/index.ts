@@ -18,7 +18,7 @@ export const style = (message: string, styles?: LogStyles | LogStyles[]) => {
   for (const style of styles) {
     const ansiStyle = ansiStyles[style];
     opening += ansiStyle.open;
-    closing = ansiStyle.close + closing;
+    closing += ansiStyle.close;
   }
 
   return opening + message + closing;
