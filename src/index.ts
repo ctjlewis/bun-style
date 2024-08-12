@@ -4,21 +4,21 @@ import { BackgroundColor, ForegroundColor, Modifier } from "ansi-styles";
 export type LogStyles = keyof ForegroundColor | keyof BackgroundColor | keyof Modifier;
 
 export const style = (message: string, styles?: LogStyles[]) => {
-  if (!styles) {
+  if (!styles || styles.length === 0) {
     return message;
   }
 
-  let opening = "";
-  let closing = "";
+  const openingTags: string[] = [];
+  const closingTags: string[] = [];
 
   for (const style of styles) {
     const ansiStyle = ansiStyles[style];
-    opening += ansiStyle.open;
-    closing += ansiStyle.close;
+    openingTags.push(ansiStyle.open);
+    closingTags.unshift(ansiStyle.close);
   }
 
-  return opening + message + closing;
-}
+  return `${openingTags.join('')}${message}${closingTags.join('')}`;
+};
 
 export const styleLog = (
   message: string,
