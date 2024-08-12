@@ -3,7 +3,7 @@
   "license": "MIT",
   "type": "module",
   "types": "src/index.ts",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ctjlewis/bun-style.git"
@@ -14,8 +14,6 @@
   },
   "files": [
     "tsconfig.json",
-    "bun.lockb",
-    "node_modules.bun",
     "assets/**/*",
     "src/**/*"
   ],
